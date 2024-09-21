@@ -1,0 +1,443 @@
+body{
+    margin: 0;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.header{
+    margin-top: 60;
+    width: 100%; 
+    height: 65;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+}
+.container{
+    display: flex;
+    align-items: center; 
+    position: relative; 
+     
+}
+.hleft{
+    float: left;
+    width: 80%; 
+    height: 100%;    
+    
+}
+.hlogoleft{ 
+    align-content: center;
+    float: left;
+    width: 30%;
+    height: 100%;
+  
+}
+.logo{
+    margin-left: 30px;
+    height: 35px;
+}
+.hlogoright{
+    display: flex;
+    align-content: center;
+    
+    
+    float: right;
+    height: 100%;
+    width: 70%;
+    background-color: black;
+}
+
+.hsearch{
+    width: 250%;
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #1f1f1f;
+    border: 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+   
+    
+    
+}
+#homeicon{
+    color: white;
+}
+#search{
+    background-color: transparent;
+    border: 0;
+    color: grey;
+    margin-left: 20px;
+    width: auto;
+    border: 0;
+
+}
+#searchicon{
+ color: grey;
+ margin-left: 20px;
+ font-size: 20px;
+}
+#browse{
+    color: #b3b3b3 ;
+    float: right;
+    margin-left: 290px;
+    font-size: 30px;
+}
+.hright{
+    margin-left: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 50%; 
+}
+#signup{
+    background-color: transparent;
+    border: 0;
+    color: aliceblue;
+}
+#login{
+    color: #242323;
+    font-size: 16px;
+    font-weight: 600;
+    background: #e8e7e7;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 0;
+
+}
+#login:hover{
+    background-color: white;
+    padding: 16px 36px;
+}
+.sidebar{
+    background-color: rgb(19, 19, 19);
+    width: 24%;
+    position: fixed;
+    top: 70;
+    border-radius: 10px;
+    margin-left: 5px;
+
+    
+}
+.libraryimg{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+
+}
+.library a::after{
+    content: "+";
+    margin-left: 40px;
+    font-size: 20px;
+
+}
+
+.sideele ul li a{
+    margin-top: 10px;
+    text-decoration: none;
+    size: 10px;
+    color: #828181;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.sideele ul li a i{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.sidescroll{
+    width:90%;
+    margin-top: 30px;
+    height: 120px;
+    overflow-y: auto;
+}
+.playlist{
+    margin-bottom: 10px;
+    background-color: #363636;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+.playlist h4{
+    margin-left: 10;
+    color: white;
+}
+.playlist p{
+    margin-left: 10;
+    color: white;
+}
+.playlist button{
+    border-radius: 10px;
+    margin-left: 20;
+    height: 30;
+    width: 100;
+    border: 0;
+}
+
+.sidescroll::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+.sidescroll:hover::-webkit-scrollbar-thumb{
+    background-color:white;
+    width: 5px;
+}
+.privacy ul li a{
+    text-decoration: none;
+    color: #575656;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 6px;
+}
+.privacy ul li a :hover{
+  text-decoration: underline;
+  color: #b3b3b3;
+}
+.privacy ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.privacy ul li{
+    padding: 0 10px;
+    padding-bottom: 8px;
+}
+.englishbtn{
+    padding: 20px 30px;
+
+}
+.englishbtn button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border: 1px solid #575656 ;
+    border-radius: 20px;
+}
+.englishbtn button:hover{
+    padding: 11px 31px;
+    border: 1px solid #b3b3b3;
+}
+.mainbody{
+    margin-top: 70;
+    width:75% ;
+    height: fit-content;
+    float: right;
+    background-color: rgb(21, 20, 20);
+    margin-left: 10;
+    border-radius: 10px; 
+    overflow: hidden;
+
+    
+}
+.spotify-playlist{
+    
+    margin-top: 10;
+    padding: 10px;
+    border-radius: 100px; 
+}
+
+
+.spotify-playlist .art{
+display: flex;
+gap: 20px;
+width: 100%;
+overflow: hidden;
+}
+.spotify-playlist .art .artist{
+    width: 160px;
+    min-width: 140px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 6px;
+}
+.spotify-playlist .art .artist:hover{
+   background-color: #221f1f;
+}
+.spotify-playlist .art .artist img{
+    width: 100%;
+    min-width: 6px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+} 
+.spotify-playlist .artist h4{
+    color: #e8e7e7;
+}
+.spotify-playlist .artist p{
+    color: #8b8888;
+    font-size: 13px;
+    margin-top: 10px;
+
+}
+.spotify-playlist  .artist:hover .play-btn i{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlist h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    
+}
+
+.spotify-playlist .card{
+display: flex;
+gap: 20px;
+width: 100%;
+overflow: hidden;
+}
+.spotify-playlist .card .item{
+    width: 160px;
+    min-width: 140px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 6px;
+}
+.spotify-playlist .card .item:hover{
+   background-color: #221f1f;
+}
+.spotify-playlist .card .item img{
+    width: 100%;
+    min-width: 6px;
+    margin-bottom: 10px;
+} 
+.spotify-playlist .item h4{
+    color: #e8e7e7;
+}
+.spotify-playlist .item p{
+    color: #8b8888;
+    font-size: 13px;
+    margin-top: 10px;
+
+}
+.spotify-playlist .item p:hover{
+  text-decoration: underline;
+
+}
+.spotify-playlist .play-btn{
+    position: relative;
+}
+.spotify-playlist .play-btn i{
+    position: absolute;
+    background-color: green;
+    border-radius: 50%;
+    padding: 14px;
+    right: 10px;
+    top: -40;
+    opacity: 0;
+    transform: 0.3s ease all;
+
+}
+.spotify-playlist  .item:hover .play-btn i{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.footersection{
+    padding: 20px 40px;
+
+} 
+.footer{
+    display: flex;
+}
+.footersection .footerlinks{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footersection .footer .footerlinks .footercol{
+    margin: 0 12px;
+}
+.footersection .footer .footerlinks div{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.footersection .footer .footerlinks ul{
+    
+   list-style: none;
+   margin: 6px 0;
+   padding-left: 1px;
+    
+}
+.footersection .footer .footerlinks a{
+    color: #e6e6e5;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    
+    
+}
+.footersection .footer .footerlinks a:hover{
+    color: #fbfbfb;
+    text-decoration: underline;
+   
+    
+}
+.footer .sociallink i{
+
+    color: white;
+    background-color: #1f1f1f;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+
+
+}
+.footer .sociallink i:hover{
+    color: rgb(2, 2, 2);
+    background-color: #e6e6e5
+
+}
+hr{
+    padding:0 20px;
+    border: 0;
+    outline: 0;
+    border: 1px solid #363636;
+
+}
+.copyright{
+    padding: 0 40px;
+    color: white;
+    margin-bottom: 150px;
+}
+.preview{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+   padding:15px 40px;
+   height: ;        
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(to right,#ae2896,#509bf5);
+
+}
+.preview h4{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+.preview p{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+}
+.preview button{
+    padding: 12px 32px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+
+}
