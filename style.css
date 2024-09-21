@@ -4,6 +4,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     
 }
+body::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5;
+    }
+
+body::-webkit-scrollbar-thumb{
+    background-color:white;
+    width: 5px;
+}
+
 .header{
     margin-top: 60;
     width: 100%; 
@@ -120,6 +130,7 @@ body{
     top: 70;
     border-radius: 10px;
     margin-left: 5px;
+    height:77%;
 
     
 }
@@ -155,6 +166,7 @@ body{
     margin-top: 30px;
     height: 120px;
     overflow-y: auto;
+
 }
 .playlist{
     margin-bottom: 10px;
@@ -171,10 +183,11 @@ body{
     color: white;
 }
 .playlist button{
-    border-radius: 10px;
+    width: fit-content;
+    padding: 0px 20px;
+    border-radius: 20px;
     margin-left: 20;
     height: 30;
-    width: 100;
     border: 0;
 }
 
@@ -234,6 +247,7 @@ body{
 
     
 }
+
 .spotify-playlist{
     
     margin-top: 10;
@@ -412,11 +426,12 @@ hr{
     margin-bottom: 150px;
 }
 .preview{
+    position:absolute;
     bottom: 0;
     left: 0;
     position: fixed;
    padding:15px 40px;
-   height: ;        
+   height:27 ;        
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -424,12 +439,15 @@ hr{
 
 }
 .preview h4{
+    position: absolute;
     font-size: 13px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-top: -3px;
     color: white;
 }
 .preview p{
+    position: absolute;
+    margin-top: 16;
     font-size: 13px;
     font-weight: 400;
     color: white;
@@ -439,5 +457,5 @@ hr{
     border: 0;
     outline: 0;
     border-radius: 20px;
-
+    margin-top: -5;
 }
