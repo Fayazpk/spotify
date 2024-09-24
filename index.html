@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" sizes="16x16" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
+    
     <title>Spotify</title>
 </head>
 <body>
+    <!-- ----NAVIGATION BAR----- -->
     <div class="container">
         <div class="header">
             <div class="hleft">
@@ -20,18 +20,21 @@
                 <div class="hlogoright">
                    <i class="fa fa-home" style="color: antiquewhite; padding-top: 20px;font-size: 25px;"></i>
                     <div class="hsearch">
+                        <!-- ------SEARCH BAR---- -->
                         <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
                         <input id="search"  type="text" value="what do you want to play" >
                         <i id="browse" class="fa-regular fa-window-restore"></i>
                     </div>
                 </div>  
             </div>
+            <!--------LOGIN SIGNUP BUTTON-------->
             <div class="hright">
                 <button id="signup">Signup</button>
                 <button id="login">login</button>
             </div>
         </div>
     </div>
+    <!----------SIDEBAR------->
     <div class="sidebar">
         <div class="sideele">   
             <ul>
@@ -44,6 +47,7 @@
                 </div>
             </li>
             <li>
+                <!-- --------PREVIEW SCROLL----- -->
                 <div class="sidescroll">
                     <div class="playlist">
                         <h4>create your first playlist</h4>
@@ -59,6 +63,7 @@
             </li>
             </ul>
         </div>
+        <!-- -------LEGAL AND PRIVAY--------- -->
         <div class="privacy">
             <ul>
                 <li>
@@ -85,6 +90,7 @@
     
     <!-- ------Main body------ -->
    <div class="mainbody">
+    <!-- ----SINGERS------ -->
     <div class="spotify-playlist">
         <h2>Popular Artists</h2>
         <div class="art">
@@ -128,7 +134,7 @@
             <P>Artist</P>
         </div>
     </div>
-
+<!-- --------ALBUM------- -->
     <div class="spotify-playlist"></div>
         <h2>Popular Album</h2>
         <div class="card">
@@ -172,6 +178,7 @@
             <P>Karan Aujla,Ikky</P>
         </div>
     </div>
+    <!-- --------POPULAR RADIO------ -->
         <div class="spotify-playlist">
             <h2>Popular Radio</h2>
             <div class="card">
@@ -212,6 +219,7 @@
                 <P>With Diljit Dosanjith<br>Shubh,Sidhu Moose...</P>
             </div>
         </div>
+        <!-- ------------FEATURED CHART------- -->
         <div class="spotify-playlist"></div>
             <h2>Featured Charts</h2>
             <div class="card">
